@@ -1,38 +1,59 @@
+#space {
+  height: 2000px;
+  width: auto;
+}
 
 /* bagian jumbotron */
-.jumbotron {
+div {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+.banner {
+  padding-top: 74px;
   font-family: Arial;
   font-style: normal;
   font-weight: 700;
 }
-.jumbotron > h1 {
+.banner > h1 {
   font-size: 36px;
   line-height: 150%;
   font-weight: 700;
 }
-.jumbotron p, .jumbotron button{
+
+.banner button {
   font-size: 14px;
   line-height: 20px;
 }
-.jumbotron button {
-  background-color: #5CB85F;
+.banner button {
+  background-color: #5cb85f;
   color: white;
   height: 36px;
   width: 140px;
   padding: 8px 12px;
   border: none;
   border-radius: 2px;
-  
 }
-img {
+.imgCar {
   width: 100%;
   height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+#background {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  background-color: #0d28a6;
+  height: 60%;
+  width: 100%;
+  border-radius: 60px 0 0 0;
 }
 
 /* Navbar */
-header{
-  /* ≥768px */
-  padding: 0 16px;
+.navbar {
+  max-height: 34px;
 }
 .navbar-brand img {
   height: 34px;
@@ -43,4 +64,58 @@ nav {
   font-weight: 400;
   line-height: 20px;
   font-size: 14px;
+}
+
+#navbar {
+  width: 100%;
+  max-height: 74px;
+  z-index: 2;
+  overflow: hidden;
+  background-color: #f1f3ff;
+}
+.stickyBar {
+  padding-top: 24px;
+  padding-bottom: 16px;
+  position: fixed;
+  top: 0;
+}
+
+/* Service */
+
+.imgService {
+  width: 100%;
+  height: auto;
+  padding: 10%;
+}
+.listService img {
+  width: 24px;
+  margin-right: 16px;
+}
+.listService ul li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+/* Media querry >720px */
+@media (min-width: 780px) {
+  .banner {
+    padding-left: 120px;
+  }
+  header {
+    padding-left: 120px;
+  }
+  /* .ourService {
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerService {
+    width: 90%;
+  }
+  .imgService {
+    height: 428px;
+    width: auto;
+    padding: 0;
+  } */
 }
