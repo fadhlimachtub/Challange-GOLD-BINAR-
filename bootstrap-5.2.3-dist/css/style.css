@@ -3,7 +3,65 @@
   width: auto;
 }
 
-/* bagian jumbotron */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landingPage {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headContent {
+  text-align: center;
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.ourService .headContent {
+  text-align: left;
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: 700;
+}
+#forDesktop {
+  padding: 16px;
+}
+
+/* Navbar */
+.navbar {
+  max-height: 34px;
+}
+.navbar-brand img {
+  height: 34px;
+  width: 100px;
+}
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+#navbar {
+  width: 100%;
+  max-height: 74px;
+  z-index: 2;
+  overflow: hidden;
+  background-color: #f1f3ff;
+}
+.stickyBar {
+  padding-top: 24px;
+  padding-bottom: 16px;
+  position: fixed;
+  top: 0;
+}
+/* akhir navbar */
+
+/* banner section*/
 div {
   font-weight: 700;
   font-size: 14px;
@@ -50,38 +108,19 @@ div {
   width: 100%;
   border-radius: 60px 0 0 0;
 }
+/* akhir banner section*/
 
-/* Navbar */
-.navbar {
-  max-height: 34px;
+/* Service section*/
+.containerService {
+  max-width: 1027px;
+  max-height: auto;
 }
-.navbar-brand img {
-  height: 34px;
-  width: 100px;
+.contentService {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px;
 }
-nav {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-#navbar {
-  width: 100%;
-  max-height: 74px;
-  z-index: 2;
-  overflow: hidden;
-  background-color: #f1f3ff;
-}
-.stickyBar {
-  padding-top: 24px;
-  padding-bottom: 16px;
-  position: fixed;
-  top: 0;
-}
-
-/* Service */
-
 .imgService {
   width: 100%;
   height: auto;
@@ -95,15 +134,47 @@ nav {
   list-style: none;
   margin-bottom: 16px;
 }
+/* akhir service section */
+
+/* Why Us section */
+.mainContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.listContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: auto;
+}
+.content {
+  min-width: 328px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #D0D0D0;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 16px 16px  0px 16px;
+}
+
+/* akhir why us section */
 
 /* Media querry >720px */
 @media (min-width: 780px) {
-  .banner {
-    padding-left: 120px;
+  
+  #forDesktop {
+    padding-left: 136px;
   }
-  header {
-    padding-left: 120px;
+  .imgService {
+    padding: 10%;
+    padding-left: 0;
   }
+  .contentService {
+    padding: 70px;
+  }
+  
   /* .ourService {
     margin-left: 120px;
     display: flex;
