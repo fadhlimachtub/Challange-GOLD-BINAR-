@@ -13,7 +13,7 @@
     <div class="landingPage">
       <div class="container-fluid p-0 m-0" style="background-color: #f1f3ff">
         <!-- Navbar -->
-        <header>
+        <header id="navbar">
           <nav id="forDesktop" class="navbar navbar-expand-md navbar-light py-0 pe-3">
             <a class="navbar-brand p-0" href="#"><img src="images/landing_page/logo.png" alt="logo" /></a>
             <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="border: none">
@@ -28,7 +28,7 @@
                 <div class="navbar-nav ms-auto">
                   <a class="nav-link active" href="#ourService">Our Service</a>
                   <a class="nav-link active" href="#whyUs">Why Us</a>
-                  <a class="nav-link active" href="#">Testimonial</a>
+                  <a class="nav-link active" href="#testimoni">Testimonial</a>
                   <a class="nav-link active" href="#">FAQ</a>
                 </div>
               </div>
@@ -83,36 +83,106 @@
 
       <!-- Why us section -->
       <section id="whyUs">
-        <div class="mainContent">
+        <div class="mainContent container-fluid">
           <div class="p-0 m-0">
             <h2 class="headContent">Why Us?</h2>
             <p>Mengapa harus pilih Binar Car Rental?</p>
           </div>
-          <div class="listContent">
-            <div class="content">
-              <img src="images/landing_page/icon_complete.png" alt="icon_image" />
-              <h3>Mobil Lengkap</h3>
-              <p>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+          <div class="listContent row">
+            <div class="col-md-3 p-0">
+              <div class="content">
+                <img src="images/landing_page/icon_complete.png" alt="icon_image" />
+                <h3>Mobil Lengkap</h3>
+                <p>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+              </div>
             </div>
-            <div class="content">
-              <img src="images/landing_page/icon_complete.png" alt="icon_image" />
-              <h3>Mobil Lengkap</h3>
-              <p>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+            <div class="col-md-3 p-0">
+              <div class="content">
+                <img src="images/landing_page/icon_price.png" alt="icon_image" />
+                <h3>Harga Murah</h3>
+                <p>Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
+              </div>
             </div>
-            <div class="content">
-              <img src="images/landing_page/icon_complete.png" alt="icon_image" />
-              <h3>Mobil Lengkap</h3>
-              <p>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+            <div class="col-md-3 p-0">
+              <div class="content">
+                <img src="images/landing_page/icon_24hrs.png" alt="icon_image" />
+                <h3>Layanan 24 Jam</h3>
+                <p>Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
+              </div>
             </div>
-            <div class="content">
-              <img src="images/landing_page/icon_complete.png" alt="icon_image" />
-              <h3>Mobil Lengkap</h3>
-              <p>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+            <div class="col-md-3 p-0">
+              <div class="content">
+                <img src="images/landing_page/icon_professional.png" alt="icon_image" />
+                <h3>Sopir Profesional</h3>
+                <p>Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- Akhir Why us section -->
+
+      <!-- testimoni section -->
+      <section id="testimoni">
+        <div class="mainContent">
+          <div class="p-0 m-0">
+            <h2 class="headContent">Testimonial</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+          </div>
+          <div id="slider" class="listContent">
+            <div class="col-md-6">
+              <div class="content">
+                <img src="images/landing_page/profil2.png" alt="profil_image" />
+                <div class="fillContent">
+                  <img src="images/landing_page/Rate.png" alt="icon_image" />
+                  <div>
+                    <p>
+                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
+                      <br />
+                      <span style="font-weight: 400; line-height: 40px">John Dee 32, Bromo</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="content">
+                <img src="images/landing_page/profil1.png" alt="profil_image" />
+                <div class="fillContent">
+                  <img src="images/landing_page/Rate.png" alt="icon_image" />
+                  <div>
+                    <p class="mb-2">
+                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
+                      <br />
+                      <span style="font-weight: 400; line-height: 40px">John Dee 32, Bromo</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="content">
+                <img src="images/landing_page/profil3.png" alt="profil_image" style="background-color: burlywood; border-radius: 50%" />
+                <div class="fillContent">
+                  <img src="images/landing_page/Rate.png" alt="icon_image" />
+                  <div>
+                    <p class="mb-2">
+                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
+                      <br />
+                      <span style="font-weight: 400; line-height: 40px">John Dee 32, Bromo</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button id="btnLeft">&#10094</button>
+            <button id="btnRight">&#10095</button>
+          </div>
+        </div>
+      </section>
+      <!-- Akhir testimoni section -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>

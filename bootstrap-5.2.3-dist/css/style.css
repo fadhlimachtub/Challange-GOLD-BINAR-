@@ -15,12 +15,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-.headContent {
-  text-align: center;
-  line-height: 36px;
-  font-size: 24px;
-  font-weight: 700;
-}
 .ourService .headContent {
   text-align: left;
   line-height: 36px;
@@ -40,6 +34,7 @@ body {
   width: 100px;
 }
 nav {
+  max-width: 1191px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   line-height: 20px;
@@ -137,33 +132,122 @@ div {
 /* akhir service section */
 
 /* Why Us section */
-.mainContent{
+#whyUs .mainContent {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.listContent {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-items: auto;
+#whyUs .headContent {
+  text-align: center;
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: 700;
 }
-.content {
-  min-width: 328px;
+#whyUs .content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border: 1px solid #D0D0D0;
+  border: 1px solid #d0d0d0;
   border-radius: 8px;
   padding: 24px;
-  margin: 16px 16px  0px 16px;
+  padding-bottom: 0;
+  margin: 0px 16px 16px 16px;
+}
+#whyUs .content img,
+#whyUs .content h3,
+#whyUs .content p {
+  margin-bottom: 16px;
+}
+#whyUs .content img {
+  max-width: 32px;
+}
+#whyUs .content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+/* akhir why us section */
+
+/* testimoni section */
+#testimoni {
+  margin-top: 44px;
+}
+#testimoni .mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#testimoni .headContent {
+  text-align: center;
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: 700;
+}
+#testimoni .listContent {
+  overflow: hidden;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+}
+#testimoni .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 32px;
+  gap: 24px;
+  width: 50%;
+  max-height: 392px;
+  background: #f1f3ff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  margin: 0px 16px 16px 16px;
+}
+#testimoni .content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+#testimoni .content img {
+  max-width: 80px;
+}
+#testimoni .content .fillContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.fillContent img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fillContent p {
+  text-align: left;
 }
 
-/* akhir why us section */
+/* slideshow button*/
+
+#btnLeft,
+#btnRight {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #c4c4c4;
+  background-color: white;
+}
+#btnLeft:hover,
+#btnRight:hover {
+  border: none;
+  color: white;
+  background-color: #5cb85f;
+}
+
+/* akhir testimoni section */
 
 /* Media querry >720px */
 @media (min-width: 780px) {
-  
   #forDesktop {
     padding-left: 136px;
   }
@@ -174,7 +258,22 @@ div {
   .contentService {
     padding: 70px;
   }
-  
+
+  #whyUs .mainContent {
+    align-items: flex-start;
+  }
+  #whyUs .headContent {
+    text-align: left;
+  }
+  #testimoni .content {
+    flex-direction: row;
+    width: auto;
+    max-height: 270px;
+  }
+  #testimoni .content .fillContent {
+    align-items: flex-start;
+    gap: 8px;
+  }
   /* .ourService {
     margin-left: 120px;
     display: flex;
