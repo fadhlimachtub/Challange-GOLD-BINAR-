@@ -2,7 +2,6 @@
   height: 2000px;
   width: auto;
 }
-
 body {
   display: flex;
   justify-content: center;
@@ -14,8 +13,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid whitesmoke;
 }
-.ourService .headContent {
+.headContent {
   text-align: left;
   line-height: 36px;
   font-size: 24px;
@@ -24,14 +24,19 @@ body {
 #forDesktop {
   padding: 16px;
 }
+div {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+#brand img {
+  height: 34px;
+  width: 100px;
+}
 
 /* Navbar */
 .navbar {
   max-height: 34px;
-}
-.navbar-brand img {
-  height: 34px;
-  width: 100px;
 }
 nav {
   max-width: 1191px;
@@ -57,11 +62,6 @@ nav {
 /* akhir navbar */
 
 /* banner section*/
-div {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-}
 .banner {
   padding-top: 74px;
   font-family: Arial;
@@ -74,11 +74,11 @@ div {
   font-weight: 700;
 }
 
-.banner button {
+.button {
   font-size: 14px;
   line-height: 20px;
 }
-.banner button {
+.button {
   background-color: #5cb85f;
   color: white;
   height: 36px;
@@ -100,7 +100,7 @@ div {
   bottom: 0;
   background-color: #0d28a6;
   height: 60%;
-  width: 100%;
+  width: 97.5%;
   border-radius: 60px 0 0 0;
 }
 /* akhir banner section*/
@@ -172,23 +172,12 @@ div {
 #testimoni {
   margin-top: 44px;
 }
-#testimoni .mainContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+
 #testimoni .headContent {
   text-align: center;
   line-height: 36px;
   font-size: 24px;
   font-weight: 700;
-}
-#testimoni .listContent {
-  overflow: hidden;
-  margin-top: 24px;
-  display: flex;
-  flex-direction: row;
 }
 #testimoni .content {
   position: relative;
@@ -197,8 +186,6 @@ div {
   align-items: center;
   padding: 40px 32px;
   gap: 24px;
-  width: 50%;
-  max-height: 392px;
   background: #f1f3ff;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
@@ -218,16 +205,27 @@ div {
   align-items: center;
   gap: 24px;
 }
-.fillContent img {
+#testimoni .fillContent img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.fillContent p {
+#testimoni .fillContent p {
   text-align: left;
 }
 
 /* slideshow button*/
+#slideWraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#slider {
+  overflow: hidden;
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 #btnLeft,
 #btnRight {
@@ -246,8 +244,102 @@ div {
 
 /* akhir testimoni section */
 
+/* cari mobil section */
+#cariMobil {
+  margin-top: 60px;
+  width: 100%;
+}
+
+#cariMobil .headContent {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#cariMobil .mainContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: #0d28a6;
+  color: white;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  margin: 0px 16px 16px 16px;
+}
+#cariMobil .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  margin: 64px 58px 64px 58px;
+  gap: 32px;
+}
+
+#cariMobil .fillContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+/* akhir cari mobil section */
+
+/* FAQ section */
+#faqSection {
+  margin-top: 40px;
+  width: 100%;
+}
+#faqSection .faqContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 16px 0 16px;
+}
+#faqSection ul {
+  width: 100%;
+}
+#faqSection ul li {
+  list-style: none;
+}
+#faqSection select {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  padding: 16px 24px;
+  height: 56px;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+/* akhir FAQ section */
+
+/* footer section */
+#footer {
+  margin-top: 44px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+#footer .contactIcon img {
+  max-width: 32px;
+}
+#footer .footerContent {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px 0 16px;
+}
+/* akhir footer section */
+
 /* Media querry >720px */
-@media (min-width: 780px) {
+@media (min-width: 768px) {
   #forDesktop {
     padding-left: 136px;
   }
@@ -265,27 +357,73 @@ div {
   #whyUs .headContent {
     text-align: left;
   }
+  #slider {
+    flex-direction: row;
+    max-height: 270px;
+    min-width: 50%;
+    flex-wrap: nowrap;
+  }
   #testimoni .content {
     flex-direction: row;
-    width: auto;
     max-height: 270px;
+    min-width: 50%;
+  }
+  #testimoni .content {
+    flex-direction: row;
+    max-height: 270px;
+    min-width: 50%;
   }
   #testimoni .content .fillContent {
     align-items: flex-start;
     gap: 8px;
   }
-  /* .ourService {
-    margin-left: 120px;
-    display: flex;
-    align-items: center;
+
+  /* cari mobil */
+
+  #cariMobil .mainContent {
+    flex-direction: row;
     justify-content: center;
+    max-height: 326px;
+    margin-left: 136px;
+    margin-right: 136px;
   }
-  .containerService {
-    width: 90%;
+  #cariMobil .headContent {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
   }
-  .imgService {
-    height: 428px;
-    width: auto;
+
+  /* FAQ */
+
+  #faqSection .faqMainContent {
+    display: flex;
+    flex-direction: row;
+    margin-left: 136px;
+    margin-right: 136px;
+  }
+  #faqSection .faqContent {
+    display: flex;
+    top: 0;
+    align-items: flex-start;
+    text-align: left;
     padding: 0;
-  } */
+  }
+
+  /* footer section */
+  #footer .footerMainContent {
+    display: flex;
+    flex-direction: row;
+    margin-left: 136px;
+    margin-right: 136px;
+  }
+  #footer .footerContent {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0;
+  }
 }
