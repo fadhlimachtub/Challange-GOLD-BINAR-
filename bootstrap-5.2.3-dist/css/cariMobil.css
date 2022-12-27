@@ -5,7 +5,7 @@ body {
 }
 .cariMobil {
   position: relative;
-  max-width: 1440px;
+  width: 1440px;
   display: flex;
   flex-direction: column;
   justify-content: center;
