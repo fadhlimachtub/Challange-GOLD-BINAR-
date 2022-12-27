@@ -5,44 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Binar Car Rental</title>
 
-    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/style.css" />
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/landingPage.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
   </head>
 
   <body>
     <div class="landingPage">
-      <div class="container-fluid p-0 m-0" style="background-color: #f1f3ff">
-        <!-- Navbar -->
-        <header id="navbar">
-          <nav id="forDesktop" class="navbar navbar-expand-md navbar-light py-0 pe-3">
-            <a id="brand" class="navbar-brand p-0" href="#"><img src="images/landing_page/logo.png" alt="logo" /></a>
-            <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="border: none">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end w-50" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BCR</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <div class="navbar-nav ms-auto">
-                  <a class="nav-link active" href="#ourService">Our Service</a>
-                  <a class="nav-link active" href="#whyUs">Why Us</a>
-                  <a class="nav-link active" href="#testimoni">Testimonial</a>
-                  <a class="nav-link active" href="#faqSection">FAQ</a>
-                </div>
+      <!-- Navbar -->
+      <header id="navbar" class="sticky-top">
+        <nav id="forDesktop" class="navbar navbar-expand-md navbar-light py-0 pe-3">
+          <a id="brand" class="navbar-brand p-0" href="#"><img src="images/landing_page/logo.png" alt="logo" /></a>
+          <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="border: none">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end w-50" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BCR</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="#ourService">Our Service</a>
+                <a class="nav-link active" href="#whyUs">Why Us</a>
+                <a class="nav-link active" href="#testimoni">Testimonial</a>
+                <a class="nav-link active" href="#faqSection">FAQ</a>
               </div>
             </div>
-          </nav>
-        </header>
-        <!-- Akhir Navbar -->
+          </div>
+        </nav>
+      </header>
+      <!-- Akhir Navbar -->
 
+      <div class="container-fluid p-0 m-0" style="background-color: #f1f3ff">
         <!-- Banner -->
         <section class="banner">
           <div class="container-fluid p-0">
             <div class="row row-fluid ps-0 pe-0 m-0">
               <div id="forDesktop" class="col-md-6">
-                <h1>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+                <p class="headBanner">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</p>
                 <p style="margin-right: 20%">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam..</p>
                 <a href="cariMobil.html"><button type="button" class="button">Mulai Sewa Mobil</button></a>
               </div>
@@ -83,39 +83,31 @@
 
       <!-- Why us section -->
       <section id="whyUs">
-        <div class="mainContent container-fluid">
-          <div class="p-0 m-0">
-            <h2 class="headContent">Why Us?</h2>
+        <div class="mainContent">
+          <div class="headListContent">
+            <p class="headContent">Why Us?</p>
             <p>Mengapa harus pilih Binar Car Rental?</p>
           </div>
-          <div class="listContent row">
-            <div class="col-md-3 p-0">
-              <div class="content">
-                <img src="images/landing_page/icon_complete.png" alt="icon_image" />
-                <h3>Mobil Lengkap</h3>
-                <p>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
-              </div>
+          <div class="listContent">
+            <div class="content">
+              <img src="images/landing_page/icon_complete.png" alt="icon_image" />
+              <h3>Mobil Lengkap</h3>
+              <p>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
             </div>
-            <div class="col-md-3 p-0">
-              <div class="content">
-                <img src="images/landing_page/icon_price.png" alt="icon_image" />
-                <h3>Harga Murah</h3>
-                <p>Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
-              </div>
+            <div class="content">
+              <img src="images/landing_page/icon_price.png" alt="icon_image" />
+              <h3>Harga Murah</h3>
+              <p>Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
             </div>
-            <div class="col-md-3 p-0">
-              <div class="content">
-                <img src="images/landing_page/icon_24hrs.png" alt="icon_image" />
-                <h3>Layanan 24 Jam</h3>
-                <p>Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
-              </div>
+            <div class="content">
+              <img src="images/landing_page/icon_24hrs.png" alt="icon_image" />
+              <h3>Layanan 24 Jam</h3>
+              <p>Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
             </div>
-            <div class="col-md-3 p-0">
-              <div class="content">
-                <img src="images/landing_page/icon_professional.png" alt="icon_image" />
-                <h3>Sopir Profesional</h3>
-                <p>Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
-              </div>
+            <div class="content">
+              <img src="images/landing_page/icon_professional.png" alt="icon_image" />
+              <h3>Sopir Profesional</h3>
+              <p>Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
             </div>
           </div>
         </div>
@@ -125,12 +117,10 @@
       <!-- testimoni section -->
       <section id="testimoni">
         <div id="slideWraper" class="mainContent">
-          <div class="p-0 m-0">
-            <h2 class="headContent">Testimonial</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-          </div>
-          <div id="slider" class="listContent">
-            <div class="content">
+          <h2 class="headContent">Testimonial</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+          <div id="slider">
+            <div class="content" id="contentTest">
               <img src="images/landing_page/profil2.png" alt="profil_image" />
               <div class="fillContent">
                 <img src="images/landing_page/Rate.png" alt="icon_image" />
@@ -170,9 +160,9 @@
               </div>
             </div>
           </div>
-          <div id="btnSlide">
-            <!-- <button id="btnLeft" type="button">&#10094</button>
-            <button id="btnRight" type="button">&#10095</button> -->
+          <div class="btnSlide">
+            <button id="btnLeft" type="button">&#10094</button>
+            <button id="btnRight" type="button">&#10095</button>
           </div>
         </div>
       </section>
@@ -272,6 +262,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    <script src="bootstrap-5.2.3-dist/js/script.js"></script>
+    <script src="bootstrap-5.2.3-dist/js/landingPage.js"></script>
   </body>
 </html>
