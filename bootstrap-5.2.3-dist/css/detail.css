@@ -1,0 +1,357 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detailMobil {
+  position: relative;
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid whitesmoke;
+}
+.headContent {
+  text-align: left;
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: 700;
+}
+#forDesktop {
+  padding: 16px;
+}
+div {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+#brand img {
+  height: 34px;
+  width: 100px;
+}
+
+/* Navbar */
+#navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 266px;
+  z-index: 3;
+  background-color: #f1f3ff;
+}
+.navbar {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  max-height: 34px;
+}
+nav {
+  max-width: 1191px;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 14px;
+}
+.stickyBar {
+  padding-top: 24px;
+  padding-bottom: 16px;
+  position: fixed;
+  top: 0;
+}
+/* akhir navbar */
+
+/* banner section*/
+.banner {
+  padding-top: 0px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 700;
+}
+.headBanner {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.button {
+  font-size: 14px;
+  line-height: 20px;
+}
+.button {
+  background-color: #5cb85f;
+  color: white;
+  height: 36px;
+  width: 140px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 2px;
+}
+.imgCar {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+#background {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  background-color: #0d28a6;
+  height: 60%;
+  width: 97.5%;
+  border-radius: 60px 0 0 0;
+}
+/* akhir banner section*/
+
+/* form section */
+#formHasil {
+  top: 195px;
+  position: absolute;
+  z-index: 3;
+  width: 75%;
+}
+.hasilMainContent {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 24px;
+  gap: 24px;
+}
+.detailMobil h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+.listContent {
+  display: flex;
+  flex-direction: row;
+  height: 58px;
+  gap: 16px;
+}
+#formHasil label {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+}
+#formHasil .content {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#formHasil .content:nth-child(5) {
+  width: 30%;
+}
+#formHasil input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 12px;
+  height: 36px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  background: #d0d0d0;
+  border: none;
+}
+
+/* background */
+.trans {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* akhir form section */
+
+/* hasil pencarian section */
+#hasilCari {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  top: 377px;
+  position: absolute;
+  z-index: 2;
+  max-height: 618px;
+  width: 75%;
+  justify-content: space-between;
+}
+#hasilCari .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 24px;
+}
+#hasilCari .content:nth-child(1) {
+  max-height: 618px;
+  width: 59%;
+}
+#hasilCari .content:nth-child(2) {
+  max-height: 405px;
+  width: 38%;
+}
+#hasilCari .fillContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#hasilCari .imageContent {
+  padding: 28px 44px;
+}
+#hasilCari .imageContent img {
+  width: 100%;
+}
+#hasilCari .textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  gap: 8px;
+}
+#hasilCari .textContent p {
+  margin: 0;
+}
+#hasilCari .price {
+  margin-bottom: 44px;
+}
+#hasilCari .price:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* akhir pencarian section */
+
+/* footer section */
+#footer .contactIcon {
+  display: flex;
+  gap: 16px;
+}
+#footer .contactIcon img {
+  max-width: 32px;
+}
+#footer .footerContent {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px 0 16px;
+}
+/* akhir footer section */
+
+/* for background */
+body {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 769px) {
+  .banner {
+    padding-top: 74px;
+  }
+  #forDesktop {
+    padding-left: 136px;
+  }
+
+  /* navbar section */
+
+  /* footer section */
+  .detailMobil {
+    height: 1366px;
+  }
+  #footer {
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 0;
+    bottom: 100px;
+    max-height: 128px;
+    width: 100%;
+  }
+  #footer .footerMainContent {
+    display: flex;
+    flex-direction: row;
+    margin-left: 136px;
+    margin-right: 136px;
+  }
+  #footer .footerContent {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .detailMobil {
+    height: auto;
+  }
+  #formHasil {
+    margin-top: 70px;
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+  #formHasil .content label {
+  }
+  .listContent {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  #formHasil .content {
+    height: 60px;
+  }
+  #formHasil .content:nth-child(5) {
+    height: 40px;
+  }
+
+  /* detail produk */
+  #hasilCari {
+    position: static;
+    overflow: auto;
+    width: 100%;
+    padding: 16px;
+  }
+  #hasilCari .content {
+    height: auto;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  #hasilCari .content:nth-child(1) {
+    order: 2;
+    max-height: 1366px;
+    width: 100%;
+  }
+  #hasilCari .content:nth-child(2) {
+    order: 1;
+    max-height: 1366px;
+    width: 100%;
+  }
+
+  /* footer */
+  #footer {
+    position: static;
+    margin-bottom: 100px;
+    width: 100%;
+  }
+}

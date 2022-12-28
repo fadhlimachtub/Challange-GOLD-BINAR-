@@ -203,6 +203,10 @@ nav {
   margin-bottom: 100px;
   width: 100%;
 }
+#footer .contactIcon{
+  display: flex;
+  gap: 16px;
+}
 #footer .contactIcon img {
   max-width: 32px;
 }
