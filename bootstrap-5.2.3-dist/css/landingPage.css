@@ -190,7 +190,7 @@ nav {
   line-height: 24px;
 }
 #testimoni .content img {
-  max-width: 80px;
+  width: 80px;
 }
 #testimoni .content .fillContent {
   display: flex;
@@ -266,6 +266,8 @@ nav {
   color: white;
   background-color: #5cb85f;
 }
+
+
 
 /* akhir testimoni section */
 
